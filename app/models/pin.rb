@@ -1,6 +1,6 @@
 class Pin < ActiveRecord::Base
 	belongs_to :user
-
+	acts_as_votable
 	validates :title, presence: true
 	validates :discription, presence: true
 
